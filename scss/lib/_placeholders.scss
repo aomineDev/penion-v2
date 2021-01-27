@@ -1,0 +1,129 @@
+// PLACEHOLDERS 
+
+// container
+%container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	@include mobile($bp-xs) {
+		max-width: 540px;
+	}
+	@include mobile($bp-sm) {
+		max-width: 720px;
+	}
+	@include mobile($bp-md) {
+		max-width: 960px;
+	}	
+	@include mobile($bp-lg) {
+		max-width: 1140px;
+	}
+	@include mobile($bp-lg-1) {
+		max-width: 1280px;
+	}
+}
+
+%tap {
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+// secciones
+%sec-p {
+	padding-top: 80px;
+}
+%title {
+	text-align: center;
+}
+%title-1 {
+	@extend %title;
+	font-family: $kalam;
+	font-weight: 700;
+	font-size: 2.5em;
+	@include mobile($bp-xs){
+		font-size: 3em;
+	}
+	@include mobile($bp-sm){
+		font-size: 3.5em;
+	}
+	@include mobile($bp-md){
+		font-size: 4em;
+	}
+	@include mobile($bp-lg){
+		font-size: 4.5em;
+	}
+}
+%title-2 {
+	@extend %title;
+	font-size: 2em;
+	font-weight: 500;
+	font-family: $pacifico;
+	padding-bottom: 50px;
+	@include mobile($bp-xs){
+		font-size: 2.5em;
+	}
+	@include mobile($bp-sm){
+		font-size: 3em;
+	}
+	@include mobile($bp-md){
+		font-size: 3.5em;
+	}
+}
+
+
+// Titles 
+%title-3 {
+	font-weight: 500;
+	font-size: 1.8em;
+	font-family: $pacifico;
+	@include mobile($bp-xs){
+		font-size: 2em;
+	}
+	@include mobile($bp-sm){
+		font-size: 2.2em;
+	}
+}
+%title-4 {
+	font-weight: 500;
+	font-size: 1.6em;
+	font-family: $pacifico;
+	@include mobile($bp-sm){
+		font-size: 2em;
+	}
+}
+// Text
+%text-1 {
+	font-size: 1em;
+	@include mobile($bp-xs){
+		font-size: 1.1em;
+	}
+	@include mobile($bp-sm){
+		font-size: 1.2em;
+	}
+}
+
+// Contactanos
+%input-contactanos {
+	width: calc(100% - 56px);
+	border-radius: 20px;
+	outline: none;
+	padding: 10px;
+	color: $dark;
+	transition: border .5s;
+	font-size: 16px;
+	border: 3px solid $blue-light;
+	&:focus{
+		border: 3px solid $blue;	
+	}
+	@include desktop($bp-sm){
+		width: 100%;
+	}
+}
+%group {
+	width: 100%;
+	transition: background-image .7s;
+	background-position: right bottom;
+	background-size: 50px;
+	background-repeat: no-repeat;
+}

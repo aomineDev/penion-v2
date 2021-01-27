@@ -16,10 +16,10 @@ if (isset($_POST)) {
 	$destiny = 'soporte@teampixeland.com';
 	$asunto = 'consulta';
 
-	if ($name && $email && $message) {
+	if ($name && $cel && $email && $mensaje) {
 		$content = "Nombre: $name\n";
 		$content .= "Email: $email\n";
-		$content .= "Mensaje: $message";
+		$content .= "Mensaje: $mensaje";
 
 
 		// Enviando Datos
